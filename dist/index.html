@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171916"><meta name="description" content="HORIZON / 地平线 — stellia 的汽车影像展。穿过山海、城市与夜色，在光影之间停留。">
+  <title>HORIZON / 地平线 — stellia</title>
+  <link rel="stylesheet" href="style.css"><script src="photos.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="header"><a class="wordmark" href="#" aria-label="HORIZON 首页">HORIZON<span>地 平 线</span></a><nav aria-label="主导航"><a href="#exhibition" data-nav="exhibition">精选展览 <span>01</span></a><a href="#archive" data-nav="archive">完整档案 <span>02</span></a><a href="#about" data-nav="about">关于 <span>03</span></a></nav><span class="signature">PHOTOGRAPHY BY <b>stellia</b></span></header>
+<main id="exhibition-view">
+  <section class="hero" aria-labelledby="hero-title">
+    <img id="hero-image" class="hero-image" alt="暮色中，跑车停在水面与鸟居之间" fetchpriority="high">
+    <div class="hero-shade"></div><div class="hero-top"><span>AN AUTOMOTIVE VISUAL JOURNEY</span><span>精选影像展 · 2026</span></div>
+    <div class="hero-title"><p class="eyebrow">光影之间，自有远方。</p><h1 id="hero-title">BEYOND<br>THE <em>HORIZON.</em></h1><div class="hero-bottom"><p>关于车，关于风景。<br>也关于那些不必赶路的瞬间。</p><a class="circle-link" href="#exhibition" aria-label="进入精选展览"><span>进入展览</span><b>↘</b></a></div></div>
+    <div class="hero-foot"><span>01 — 山海与日式风景</span><span>SCROLL TO EXPLORE ↓</span><span>CURATED BY STELLIA</span></div>
+  </section>
+  <section class="intro section-pad" id="exhibition"><div class="section-kicker"><span>THE SELECTED WORKS</span><span id="selected-count"></span></div><div class="intro-row"><h2>把速度，<br>留在<em>静止</em>之中。</h2><div class="intro-copy"><p>从山海的辽阔，到城市的轮廓。<br>从引擎的余温，到夜色中的一道光。</p><p class="muted">沿着八个章节，走进我的汽车影像世界。<br>不妨慢一点看。</p></div></div><div id="chapter-nav" class="chapter-nav" aria-label="展览章节"></div></section>
+  <div id="chapters"></div>
+  <section class="archive-invite section-pad"><span class="section-kicker">KEEP EXPLORING</span><a href="#archive"><h2>每一帧，<br>都有来处。</h2><span class="invite-arrow">↗</span></a><div class="invite-bottom"><p>更多视角，更多未完的旅程。</p><a href="#archive">进入完整档案 <span id="archive-count"></span> ↗</a></div></section>
+</main>
+<main id="archive-view" hidden><section class="archive-header section-pad"><a class="back-link" href="#exhibition">↖ 返回精选展览</a><div class="section-kicker">THE COMPLETE ARCHIVE / 完整档案</div><h1>所有瞬间，<em>在此相遇。</em></h1><p>浏览全部影像，或找到某一段风景。</p><div class="archive-controls"><label class="search-label"><span>⌕</span><input id="search" type="search" placeholder="搜索车型、场景或日期" aria-label="搜索照片"></label><label class="select-label">分类<select id="category" aria-label="按分类筛选"><option value="all">全部分类</option></select></label><span id="result-count" aria-live="polite"></span></div></section><section class="archive-results section-pad"><div id="archive-grid"></div><p id="empty-state" hidden>没有找到匹配的影像。试试其他关键词，或选择全部分类。</p><button id="load-more" class="outline-button">继续浏览 ↓</button></section></main>
+<section id="about" class="about section-pad"><div class="section-kicker"><span>BEHIND THE LENS</span><span>关于这个展览</span></div><div class="about-row"><h2>看见。<br>停留。<em>记住。</em></h2><div><p>我是 <strong>stellia</strong>。</p><p>HORIZON / 地平线，是我的汽车影像收藏。<br>让车与风景同框，让速度与安静共存。</p><p class="muted">这里收录汽车影像、游戏画面与 AI 视觉实验。<br>不同的创作方式，各自标注，各自成章。</p><span class="artist-signature">stellia</span></div></div></section>
+<footer><a class="wordmark" href="#">HORIZON<span>地 平 线</span></a><span>© 2026 stellia · 影像与光的私人收藏</span><a href="#">BACK TO TOP ↑</a></footer>
+<dialog id="lightbox" aria-label="影像查看器"><div class="viewer-top"><span>HORIZON <span class="viewer-small">/ VIEWING ROOM</span></span><div><button id="slideshow" aria-label="自动播放">自动播放 ▷</button><button id="close-viewer" aria-label="关闭看图">关闭 ✕</button></div></div><button id="prev-photo" class="viewer-arrow prev" aria-label="上一张">←</button><figure><img id="viewer-image" alt=""><figcaption><span id="viewer-caption"></span><span id="viewer-counter"></span></figcaption></figure><button id="next-photo" class="viewer-arrow next" aria-label="下一张">→</button><div class="viewer-bottom"><span>← → 切换 · ESC 退出 · 触屏左右滑动</span><a id="open-photo" target="_blank" rel="noopener">查看大图 ↗</a></div></dialog>
+</body></html>
